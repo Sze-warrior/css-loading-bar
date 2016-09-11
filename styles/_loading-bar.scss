@@ -1,0 +1,79 @@
+@import "mixins";
+
+.loading-bar-container{
+	background-color: $black;
+	width: 100%;
+	height: 20px;
+	padding: 10px;
+	margin-top: 15px;
+	@include border-radius(4px);
+
+
+	@media screen and (max-width: $mobile){
+		width: 93%;
+	}
+
+	.loading-bar-status-33{
+		background-color: $green;
+		width: 0%;
+		height: 20px;
+  		-webkit-animation: thirtythreePercent 0.8s linear; /* Safari 4+ */
+  		-moz-animation: thirtythreePercent 0.8s linear;/* Fx 5+ */
+  		-o-animation: thirtythreePercent 0.8s linear;/* Opera 12+ */
+  		animation: thirtythreePercent 0.8s linear;/* IE 10+, Fx 29+ */
+  		animation-fill-mode: forwards;
+
+  		@keyframes thirtythreePercent {
+			0% {
+    			width: 0%;
+  			}
+  		
+  			100% {
+    			width: 33%;
+			}
+		}
+	}
+
+	.loading-bar-status-66{
+		background-color: $green;
+		width: 33%;
+		height: 20px;
+  		-webkit-animation: sixtysixPercent 0.8s linear; /* Safari 4+ */
+  		-moz-animation: sixtysixPercent 0.8s linear;/* Fx 5+ */
+  		-o-animation: sixtysixPercent 0.8s linear;/* Opera 12+ */
+  		animation: sixtysixPercent 0.8s linear;/* IE 10+, Fx 29+ */
+  		animation-fill-mode: forwards;
+
+  		@keyframes sixtysixPercent {
+			0% {
+    			width: 33%;
+  			}
+  		
+  			100% {
+    			width: 66%;
+			}
+		}
+	}
+
+	.loading-bar-status-100{
+		background-color: $green;
+		width: 66%;
+		height: 20px;
+  		-webkit-animation: onehundredPercent 0.8s linear; /* Safari 4+ */
+  		-moz-animation: onehundredPercent 0.8s linear;/* Fx 5+ */
+  		-o-animation: onehundredPercent 0.8s linear;/* Opera 12+ */
+  		animation: onehundredPercent 0.8s linear;/* IE 10+, Fx 29+ */
+  		animation-fill-mode: forwards;
+
+  		@keyframes onehundredPercent {
+			0% {
+    			width: 66%;
+  			}
+  		
+  			100% {
+    			width: 100%;
+			}
+		}
+	}
+
+}

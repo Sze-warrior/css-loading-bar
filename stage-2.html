@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+<html lang="eng">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Responsive mobile first website I made in my spare time.">
+    <meta name="description" content="A mobile first grid layout with HTML and CSS/SASS. Built by Michael Szeto: A UI/UX Designer who enjoys F.E Development."> 
+
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+</head>
+	<body>	
+
+	<header>
+		<div class="header-container">
+			<h1><a href="#">Responsive Grid</a></h1>
+
+			<nav>
+				<span id="navbar-toggle">Menu</span>
+				<ul class="nav-list">
+					<li><a href="#">Item 1</a></li>
+					<li><a href="#">Item 2</a></li>
+					<li><a href="#">Item 3</a></li>
+					<li><a href="#">Item 4</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main class="container">	
+		<section class="row">
+		   <div class="col-4">
+		     	<p>This is a simple loading bar I made in pure CSS and SASS. </p>	
+		     	<a href="stage-3.html">
+		     		<div class="btn-default">Next</div>
+		     	</a>		   
+		    </div>	
+
+		   <div class="col-8">
+		   		<div class="loading-bar-container">
+		   			<div class="loading-bar-status-66"></div>
+		   		</div>
+		   </div>																
+		</section>			   
+	</main>
+
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+   
+   <script> 
+   	if(typeof jquery == 'undefined'){
+   		document.write('<script src="scripts/jquery.min.js">\x3C/script>');
+   	} //The \x3/ is used to tell the browser that there is a script tag inside the document.write and is not just a string. 
+   </script>
+   
+   <script src="scripts/header.js"></script>
+   <script src="scripts/shrinking-header.js"></script>
+   </body>
+</html>

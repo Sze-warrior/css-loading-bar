@@ -1,0 +1,15 @@
+.btn-default{
+	background-color: $blue;
+	padding: 15px;
+	text-align: center;
+	width: 100px;
+	color: $white;
+	@include transition(.5s);
+	@include border-radius(4px);
+
+	&:hover{
+		cursor: pointer;
+		background-color: darken($blue, 15%);
+		@include transition(.5s);
+	}
+}
